@@ -1,0 +1,13 @@
+.section{
+    background-color: #f4d4a9;
+    border-radius:5px;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.section__head {
+    color: #dc143c;
+    text-align: center;
+    border-bottom: 1px solid #dc143c;
+    padding: 5px;
+}

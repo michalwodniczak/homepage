@@ -1,0 +1,17 @@
+.header__mainHeader {
+    color: #dc143c;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.header__mainHeader--newColor {
+    color: #0000ff
+}
+
+.header__photo {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    outline: 2px solid lightgray;
+}

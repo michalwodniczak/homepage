@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: #faebd7;
+}
+
+.body--newTheme {
+    background-color: #302f2f;
+    color:#c53434;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}

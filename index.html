@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michał Wodniczak - stron o mnie </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <h1 class="header__mainHeader js-mainHeader">Michał Wodniczak</h1>
+            <p>
+                <button class="button js-buttonNewBackground">Zmien kolor nagłówka</button>
+            </p>
+            <img class="header__photo js-photo" src="https://zapodaj.net/images/17b47c80442a6.jpg"
+                alt="Michał Wodniczak" width="200">
+            <p><button class="button js-buttonPhotoRemove">Usuń zdjęcie</button></p>
+            <button class="button js-buttonChangeTheme"><span class="js-themeText">Włącz</span> czarny motyw</button>
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#aboutMe">O mnie</a></li>
+                <li><a class="nav__link" href="#festiwal">Festiwale</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="section" id="aboutMe">
+                <h2 class="section__head">Kilka słów o mnie</h2>
+                <p>
+                    Mam na imie Michał i mam <b>27</b> lat. Interesuję sie piłką nożną ,filmem i wyprawami górskimi.Od
+                    kilku
+                    lat
+                    gram w lokalnym klubie piłkarskim.
+                </p>
+                <h2 class="section__head">Co dalej?</h2>
+                <p>
+                    <i>What's Next?</i><br>Od kilku lat próbuje sie wdrożyć w front-end i dlatego mam zamiar wypełnić tą
+                    <strong>misje!</strong>
+                    Dlatego powiedziałem sobie <em>Musisz wkońcu to zrobić!</em>. i tak oto odświeżam sobie ten kursu
+                    ponownie
+                    ;)
+                </p>
+            </section>
+            <section class="section" id="festiwal">
+                <div class="table">
+                    <table class="table__body">
+                        <caption class="table__caption">Festiwale na których byłem</caption>
+                        <tr>
+                            <th scope="row" class="table__cell table__cell--head">Nr.</th>
+                            <th scope="row" class="table__cell table__cell--head">Nazwa Festiwalu</th>
+                            <th scope="row" class="table__cell table__cell--head">Rok Festiwalu</th>
+                            <th scope="row" class="table__cell table__cell--head">Najlepszy wykonawca</th>
+                            <th scope="row" class="table__cell table__cell--head">Największe zaskoczenie</th>
+
+                        </tr>
+                        <tr>
+                            <th scope="col" class="table__cell table__cell--head">1</th>
+                            <td class="table__cell" rowspan="2">Cieszfanów Festiwal</td>
+                            <td class="table__cell">2021</td>
+                            <td class="table__cell">Łydka Grubasa</td>
+                            <td class="table__cell">Kwiat Jabłoni</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="table__cell table__cell--head">2</th>
+                            <td class="table__cell" rowspan="2">2022</td>
+                            <td class="table__cell">KSU</td>
+                            <td class="table__cell">Kashell</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="table__cell table__cell--head">3</th>
+                            <td class="table__cell">Jarocin Festiwal</td>
+                            <td class="table__cell">Hunter</td>
+                            <td class="table__cell">Ira</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            &copy;2022 by Michał
+        </footer>
+    </div>
+</body>
+
+</html>

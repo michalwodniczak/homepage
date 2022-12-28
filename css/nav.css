@@ -1,0 +1,35 @@
+.nav {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav__link {
+    color: #dc143c;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #ddcbcb;
+    display: block;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.nav__link:visited {
+    color: #3636c9;
+}
+
+.nav__link:focus {
+    background-color: #554d4d;
+    color: #eee;
+}
+
+.nav__link:hover {
+    background-color: #dc143c;
+    color: #eee;
+}

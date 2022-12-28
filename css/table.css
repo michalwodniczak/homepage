@@ -1,0 +1,28 @@
+.table {
+    overflow-x: auto;
+}
+
+.table__body {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table__caption {
+    color:#3636c9;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.table__cell {
+    background-color: #3636c9;
+    color: #f5f5f5;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.table__cell--head {
+    background-color: #800505;
+}
