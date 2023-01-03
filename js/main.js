@@ -8,8 +8,6 @@
         })
     }
 
-    onChangeHeaderColor();
-
     const onDeletePhoto = () => {
         const photoButton = document.querySelector(".js-buttonPhotoRemove");
         const photo = document.querySelector(".js-photo");
@@ -19,15 +17,13 @@
         })
     }
 
-    onDeletePhoto();
-
-    const onChangeThemeButtonText = (body) =>{
+    const onChangeThemeButtonText = (body) => {
         const themeTextElement = document.querySelector(".js-themeText");
         body.classList.contains("body--newTheme") ? themeTextElement.innerText = ("Wyłącz") : themeTextElement.innerText = ("Włącz");
     }
-    
+
     const onChangeThemeBody = () => {
-        const themeButtonElement = document.querySelector(".js-buttonChangeTheme");    
+        const themeButtonElement = document.querySelector(".js-buttonChangeTheme");
         const body = document.querySelector(".body")
         themeButtonElement.addEventListener("click", () => {
             body.classList.toggle("body--newTheme");
@@ -35,5 +31,11 @@
         })
     }
 
-    onChangeThemeBody();
+    const init = () => {
+        onChangeHeaderColor();
+        onDeletePhoto();
+        onChangeThemeBody();
+    }
+
+    init();
 }
