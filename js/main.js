@@ -1,8 +1,4 @@
 {
-    let themeButtonElement = document.querySelector(".js-buttonChangeTheme");
-    let themeTextElement = document.querySelector(".js-themeText");
-    let body = document.querySelector(".body")
-
     const onChangeHeaderColor = () => {
         const headerButton = document.querySelector(".js-buttonNewBackground");
         const headerElement = document.querySelector(".js-mainHeader");
@@ -25,8 +21,19 @@
 
     onDeletePhoto();
 
-    themeButtonElement.addEventListener("click", () => {
-        body.classList.toggle("body--newTheme");
+    const onChangeThemeButtonText = (body) =>{
+        const themeTextElement = document.querySelector(".js-themeText");
         body.classList.contains("body--newTheme") ? themeTextElement.innerText = ("Wyłącz") : themeTextElement.innerText = ("Włącz");
-    })
+    }
+    
+    const onChangeThemeBody = () => {
+        const themeButtonElement = document.querySelector(".js-buttonChangeTheme");    
+        const body = document.querySelector(".body")
+        themeButtonElement.addEventListener("click", () => {
+            body.classList.toggle("body--newTheme");
+            onChangeThemeButtonText(body)
+        })
+    }
+
+    onChangeThemeBody();
 }
