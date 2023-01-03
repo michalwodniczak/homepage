@@ -15,7 +15,7 @@
         photo.remove();
     })
 
-    themeButton.addEventListener("click", () => {
+    themeButtonElement.addEventListener("click", () => {
         body.classList.toggle("body--newTheme");
         body.classList.contains("body--newTheme") ? themeTextElement.innerText = ("Wyłącz") : themeTextElement.innerText = ("Włącz");
     })
