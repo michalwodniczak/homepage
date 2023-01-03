@@ -1,19 +1,25 @@
 {
     let button = document.querySelector(".js-buttonNewBackground");
-    let header = document.querySelector(".js-mainHeader");
-    let photoButton = document.querySelector(".js-buttonPhotoRemove");
-    let photo = document.querySelector(".js-photo");
+    let headerElement = document.querySelector(".js-mainHeader");
+
     let themeButtonElement = document.querySelector(".js-buttonChangeTheme");
     let themeTextElement = document.querySelector(".js-themeText");
     let body = document.querySelector(".body")
 
     button.addEventListener("click", () => {
-        header.classList.toggle("header__mainHeader--newColor");
+        headerElement.classList.toggle("header__mainHeader--newColor");
     })
 
-    photoButton.addEventListener("click", () => {
-        photo.remove();
-    })
+    const onDeletePhoto = () => {
+        const photoButton = document.querySelector(".js-buttonPhotoRemove");
+        const photo = document.querySelector(".js-photo");
+
+        photoButton.addEventListener("click", () => {
+            photo.remove();
+        })
+    }
+
+    onDeletePhoto();
 
     themeButtonElement.addEventListener("click", () => {
         body.classList.toggle("body--newTheme");
