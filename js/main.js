@@ -6,12 +6,9 @@
     }
 
     const onDeletePhoto = () => {
-        const photoButton = document.querySelector(".js-buttonPhotoRemove");
         const photo = document.querySelector(".js-photo");
 
-        photoButton.addEventListener("click", () => {
-            photo.remove();
-        })
+        photo.remove();
     }
 
     const onChangeThemeButtonText = (body) => {
@@ -30,9 +27,11 @@
 
     const init = () => {
         const headerButton = document.querySelector(".js-buttonNewBackground");
+        const photoButton = document.querySelector(".js-buttonPhotoRemove");
+
         headerButton.addEventListener("click", toggleHeaderColor);
-        onDeletePhoto();
-        onChangeThemeBody();
+        photoButton.addEventListener("click", onDeletePhoto)
+
     }
 
     init();
