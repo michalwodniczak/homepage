@@ -26,7 +26,7 @@
 
         headerButton.addEventListener("click", toggleHeaderColor);
         photoButton.addEventListener("click", onDeletePhoto)
-        themeButtonElement.addEventListener("click", toggleBackground)
+        themeButtonElement.addEventListener("click", toggleBackground);
 
     }
 
