@@ -1,11 +1,8 @@
 {
-    const onChangeHeaderColor = () => {
-        const headerButton = document.querySelector(".js-buttonNewBackground");
+    const toggleHeaderColor = () => {
         const headerElement = document.querySelector(".js-mainHeader");
 
-        headerButton.addEventListener("click", () => {
-            headerElement.classList.toggle("header__mainHeader--newColor");
-        })
+        headerElement.classList.toggle("header__mainHeader--newColor")
     }
 
     const onDeletePhoto = () => {
@@ -32,7 +29,8 @@
     }
 
     const init = () => {
-        onChangeHeaderColor();
+        const headerButton = document.querySelector(".js-buttonNewBackground");
+        headerButton.addEventListener("click", toggleHeaderColor);
         onDeletePhoto();
         onChangeThemeBody();
     }
