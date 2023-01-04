@@ -16,7 +16,7 @@
         const themeTextElement = document.querySelector(".js-themeText")
 
         body.classList.toggle("body--newTheme")
-        body.classList.contains("body--newTheme") ? themeTextElement.innerText = ("Wyłącz") : themeTextElement.innerText = ("Włącz");
+        themeTextElement.innerText = body.classList.contains("body--newTheme") ? "Wyłącz" : "Włącz";
     }
 
     const init = () => {
