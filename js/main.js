@@ -2,7 +2,7 @@
     const toggleHeaderColor = () => {
         const headerElement = document.querySelector(".js-mainHeader");
 
-        headerElement.classList.toggle("header__mainHeader--newColor")
+        headerElement.classList.toggle("header__mainHeader--secondColor")
     }
 
     const onDeletePhoto = () => {
@@ -15,8 +15,8 @@
         const body = document.querySelector(".body")
         const themeTextElement = document.querySelector(".js-themeText")
 
-        body.classList.toggle("body--newTheme")
-        themeTextElement.innerText = body.classList.contains("body--newTheme") ? "Wyłącz" : "Włącz";
+        body.classList.toggle("body--darkTheme")
+        themeTextElement.innerText = body.classList.contains("body--darkTheme") ? "Wyłącz" : "Włącz";
     }
 
     const init = () => {
