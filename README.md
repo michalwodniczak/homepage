@@ -5,7 +5,7 @@ It is my first project add in github.
 I created it for the YouCode course 
 
 ## Demo
-https://widmo200.github.io/homepage/
+https://michalwodniczak.github.io/homepage/
 ![show demo](img/animation.gif)
 
 ## Features
