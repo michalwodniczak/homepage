@@ -15,4 +15,4 @@ https://michalwodniczak.github.io/homepage/
 - convention BEM
 
 ## Contact
-[Michał Wodniczak github](https://github.com/widmo200)
+[Michał Wodniczak](https://github.com/michalwodniczak)
